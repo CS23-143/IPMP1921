@@ -19,3 +19,5 @@ public:
         return -1;
     }
 };
+//method2 hashing
+
