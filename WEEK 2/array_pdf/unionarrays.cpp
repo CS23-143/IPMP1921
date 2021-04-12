@@ -8,11 +8,11 @@ class Solution{
         int i=0,j=0,k=0;
         while(i<n&&j<m){
             if(a[i]<b[j]&&a[i]!=s[k-1]){
-                s[k]=a[i];
+                s[k]=a[i];//for intersection just increase i value and dont push a[i]
                 i++;k++;
             }
             if(a[i]>b[j]&&b[j]!=s[k-1]){
-                s[k]=b[j];
+                s[k]=b[j];//for intersection just increase j value and dont push b[j]
                 j++;k++;
             }
             if(a[i]==b[j]&&a[i]!=s[k-1]){
